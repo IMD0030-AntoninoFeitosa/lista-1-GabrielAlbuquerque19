@@ -16,6 +16,3 @@ void reverse( std::array< std::string, SIZE > & arr )
   }
     
 }
-int main(){
-  return 0;
-}
