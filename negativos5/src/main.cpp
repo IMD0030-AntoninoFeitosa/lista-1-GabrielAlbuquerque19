@@ -8,8 +8,8 @@ const int SIZE = 5; // input size.
 int main(void)
 {
     int cont = 0, x, i;
-    for (i=0;i<5;i++){
-        cin >> x;
+    for (i=0;i<SIZE;i++){
+        cin >> std::ws >> x;
         if(x<0){
             cont++;
         }
