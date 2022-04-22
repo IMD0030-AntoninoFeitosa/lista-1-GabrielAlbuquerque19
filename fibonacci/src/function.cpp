@@ -6,20 +6,17 @@ using std::endl;
 
 std::vector<unsigned int> fib_below_n( unsigned int n )
 {
+    std::vector<unsigned int> values;
     int n1 = 0, n2 = 1, fib_next = 0;
-    cout  << "{" << n2;
+  if(n > 1){
+    values.push_back(n2);
     fib_next = n1 + n2;
     while(fib_next < n) {
-        cout<< "; " << fib_next ;
+        values.push_back(fib_next);
         n1 = n2;
         n2 = fib_next;
         fib_next = n1 + n2;
     }
-    cout  << "}" << endl;
-    return std::vector<unsigned int>{};
-}
-int main(){
-  int n;
-    cin >> n;
-  fib_below_n(n);
+    return values;
+  }
 }
